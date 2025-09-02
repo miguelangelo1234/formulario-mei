@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário MEI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro MEI</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <label for="cidade">Cidade onde mora:</label>
+                <select id="cidade" name="cidade">
+                    <option value="" disabled selected>Selecione uma cidade</option>
+                    <option value="sao_paulo">São Paulo</option>
+                    <option value="rio_de_janeiro">Rio de Janeiro</option>
+                    <option value="belo_horizonte">Belo Horizonte</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Interesses e Preferências</legend>
+                <p><strong>Escolha até 5 produtos de interesse:</strong></p>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="produtos_interesse" value="camiseta"> Camiseta</label>
+                    <label><input type="checkbox" name="produtos_interesse" value="caneca"> Caneca</label>
+                    <label><input type="checkbox" name="produtos_interesse" value="agenda"> Agenda</label>
+                    <label><input type="checkbox" name="produtos_interesse" value="chaveiro"> Chaveiro</label>
+                    <label><input type="checkbox" name="produtos_interesse" value="ecobag"> Ecobag</label>
+                </div>
+
+                <p><strong>Escolha 1 produto para personalizar:</strong></p>
+                <div class="radio-group">
+                    <label><input type="radio" name="produtos_personalizar" value="foto" checked> Foto</label>
+                    <label><input type="radio" name="produtos_personalizar" value="nome"> Nome</label>
+                    <label><input type="radio" name="produtos_personalizar" value="logo"> Logo</label>
+                    <label><input type="radio" name="produtos_personalizar" value="frase"> Frase</label>
+                </div>
+
+                <label for="comentario">Comentário do usuário:</label>
+                <textarea id="comentario" name="comentario" rows="4"></textarea>
+                <button type="reset">Resetar</button>
+                <button type="submit">Enviar</button>
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
