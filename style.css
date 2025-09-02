@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f2f5;
+    background-color: #165dc9;
     color: #333;
     display: flex;
     justify-content: center;
@@ -8,7 +8,6 @@ body {
     min-height: 100vh;
     margin: 0;
 }
-
 .container {
     background-color: #fff;
     padding: 30px 40px;
